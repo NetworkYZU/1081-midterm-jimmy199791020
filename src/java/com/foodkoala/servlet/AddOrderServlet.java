@@ -39,7 +39,8 @@ public class AddOrderServlet extends HttpServlet {
         取得 session 物件，接收 user 傳來的 food 參數，
         將參數儲存到 session 物件裏面（你會需要將其儲存到一個 ArrayList 裏面，因爲會有多個 food）
         */
-        String foodList = request.getParameter("food");
+        ArrayList foodList = null;
+        String food = request.getParameter("food");
         HttpSession session = request.getSession();
         session.setAttribute("food", foodList);
         /*
