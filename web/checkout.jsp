@@ -17,6 +17,8 @@
         question 4 (10%)
         將 session 無效化，使其內容完全被清掉
         -->
+        foodListSession session=request.getSession();
+        session.invalidate();
         訂單已收到！<a href="index.html">回首頁</a>
        
     </body>

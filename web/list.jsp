@@ -30,13 +30,13 @@
                 <tr><td>烤雞腿</td></tr>
                 -->
                 <%
-                    String food=(String)session.getAttribute("food");
-                    if(food==null){
-                        food="";
+                    String foodList=(String)session.getAttribute("food");
+                    if(foodList==null){
+                        foodList="";
                     }
                 %>
             <form action="saveSession" method="POST">
-                <input type="text" name="food" value=<tr><td>"<%=food%>"/></td></tr>
+                <input type="text" name="food" value=<tr><td>"<%=foodList%>"/></td></tr>
                 <input type="submit"/>
             </form><br/>
             </tbody>
