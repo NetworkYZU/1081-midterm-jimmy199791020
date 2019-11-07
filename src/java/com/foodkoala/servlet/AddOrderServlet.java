@@ -42,7 +42,7 @@ public class AddOrderServlet extends HttpServlet {
         ArrayList foodList = null;
         String food = request.getParameter("food");
         HttpSession session = request.getSession();
-        session.setAttribute("food", foodList);
+        session.setAttribute("foodList", food);
         /*
         question 6 (10%)
         最後外轉址到 list.jsp
