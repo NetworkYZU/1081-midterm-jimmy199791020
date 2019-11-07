@@ -29,7 +29,16 @@
                 例如
                 <tr><td>烤雞腿</td></tr>
                 -->
-                
+                <%
+                    String food=(String)session.getAttribute("food");
+                    if(food==null){
+                        food="";
+                    }
+                %>
+            <form action="saveSession" method="POST">
+                <input type="text" name="food" value=<tr><td>"<%=food%>"/></td></tr>
+                <input type="submit"/>
+            </form><br/>
             </tbody>
         </table>
         <a href="checkout.jsp"><button>Checkout</button></a><br/>
@@ -37,5 +46,6 @@
         question 2 (10%)
         引用 /WEB-INF/footer.jsp
         -->
+        <%@include file="/WEB-INF/footer.jsp" %>
     </body>
 </html>
