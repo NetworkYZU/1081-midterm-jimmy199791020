@@ -17,9 +17,9 @@
         question 4 (10%)
         將 session 無效化，使其內容完全被清掉
         -->
-         <%
-             
-            
+        <%
+             String foodList=(String)session.getAttribute("foodList");
+            foodList="";
         %>
         訂單已收到！<a href="index.html">回首頁</a>
        
