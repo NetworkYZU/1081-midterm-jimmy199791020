@@ -30,7 +30,7 @@
                 <tr><td>烤雞腿</td></tr>
                 -->
                 <%
-                    String foodList=(String)session.getAttribute("food");
+                    String foodList=(String)session.getAttribute("foodList");
                     if(foodList==null){
                         foodList="";
                     }
